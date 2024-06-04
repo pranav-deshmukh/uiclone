@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { AdvantagesLeft } from "./AdvantagesLeft";
+import { ImageComponent } from "./ImageComponent";
 
 export const Advantages = () => {
   return (
     <div className="flex justify-start items-start w-[80%] ">
-      <div className="w-[60%] ">
+      <div className="md:w-[60%] ">
         <AdvantagesLeft />
       </div>
-      <div className="w-[40%] ">
-        <Image src={"iphone4.svg"} width={400} height={400} alt="image" />
+      <div className="md:w-[40%] md:flex hidden">
+        <ImageComponent ImageUrl={'iphone4.svg'}/>
       </div>
     </div>
   );

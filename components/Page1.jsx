@@ -4,10 +4,10 @@ import { Page1Right } from "./Page1Right";
 const Page1 = () => {
   return (
     <div className="flex justify-start items-start w-[80%]">
-      <div className="w-[60%] flex ">
+      <div className="md:w-[60%] flex">
         <Page1Left />
       </div>
-      <div className="w-[40%]">
+      <div className="md:w-[40%] md:flex hidden">
         <Page1Right />
       </div>
     </div>
